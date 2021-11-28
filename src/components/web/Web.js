@@ -12,6 +12,8 @@ import Wireframe from '../Images/undraw_prototyping_process_rswj.svg'
 import Developing from '../Images/undraw_programming_2svr.svg'
 import Testing from '../Images/undraw_Usability_testing_re_uu1g.svg'
 import Deployement from '../Images/undraw_contract_uy56.svg'
+import Source101 from '../Images/101sourcetranspHQ.png'
+import CrystalStones from '../Images/CrystalStones2logo.png'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -137,24 +139,30 @@ We have programming teams dedicated to web, mobile, and mixed reality projects.
             <hr />
 
             <div className="row">
-                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards" >
+                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards" onClick={()=>window.open("https://www.stonetechinc.co/")}>
                     <span style={{color:"white"}}><img src={StoneTech} alt="stonetech" /></span>
-                    <h2>StoneTech</h2>
-                    <p>Enim incididunt fugiat minim in cupidatat. Laborum velit sit cillum anim mollit reprehenderit. Aute excepteur id esse cupidatat sunt in consequat ea proident dolor qui. Excepteur do qui consectetur velit pariatur consectetur. Laborum culpa elit Lorem nisi ad adipisicing minim ex tempor adipisicing. Ullamco ipsum dolor tempor eu.</p>
+                    <h2>Stone Tech INC</h2>
+                    <p>
+                    Stone Tech Inc is an online store to give you the best solutions for delivering all kinds of tools and equipments at your doorstep
+                    </p>
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards" >
-                    <span style={{color:"white"}}><img src={webstudio} alt="cosmo" /></span>
-                    <h2>Web Studio</h2>
-                    <p>Enim incididunt fugiat minim in cupidatat. Laborum velit sit cillum anim mollit reprehenderit. Aute excepteur id esse cupidatat sunt in consequat ea proident dolor qui. Excepteur do qui consectetur velit pariatur consectetur. Laborum culpa elit Lorem nisi ad adipisicing minim ex tempor adipisicing. Ullamco ipsum dolor tempor eu.</p>
+                    <span style={{color:"white"}}><img src={CrystalStones} alt="cosmo" /></span>
+                    <h2>Crystal Stones</h2>
+                    <p>
+                    the home of some of Mother Nature’s greatest gifts to us all. The Crystal and Mineral Kingdom is packed with rocks, gems, crystals, and semi-precious stones of every conceivable color, pattern and hue. Crystals truly are one of the miracles of the natural world and have fascinated humankind since the dawn of time.
+                    </p>
                 </div>
             </div>
 
             <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards" >
-                    <span style={{color:"white"}}><img src={jcasa} alt="jcasa" /></span>
-                    <h2>Jcasa</h2>
-                    <p>Enim incididunt fugiat minim in cupidatat. Laborum velit sit cillum anim mollit reprehenderit. Aute excepteur id esse cupidatat sunt in consequat ea proident dolor qui. Excepteur do qui consectetur velit pariatur consectetur. Laborum culpa elit Lorem nisi ad adipisicing minim ex tempor adipisicing. Ullamco ipsum dolor tempor eu.</p>
+                    <span style={{color:"white"}}><img src={Source101} alt="jcasa" /></span>
+                    <h2>101 Source</h2>
+                    <p>
+                    WRITE WHAT YOU LOVE.
+                    </p>
                 </div>
 
                 <div className="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 cards" >

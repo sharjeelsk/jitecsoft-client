@@ -8,7 +8,7 @@ import AI from './Images/200826-artificial-intelligence-machine-learning-min.jpg
 import AR from './Images/GettyImages-1150208424-1200x562.jpg'
 import Footer from './Footer/Footer'
 import Header from './Header/Header'
-import Video from './Images/Automatic.MP4'
+//import Video from './Images/Automatic.MP4'
 import Aos from 'aos'
 import "aos/dist/aos.css"
 
@@ -25,9 +25,9 @@ const Home = ({history}) => {
         <div>
             <div className="firstsection">
             <video loop autoPlay muted id="video" ref={videoRef}>
-  <source src={Video} type="video/mp4" />
-  Your browser does not support HTML5 video.
-</video>
+                <source src="/Automatic.MP4" type="video/mp4" />
+                Your browser does not support HTML5 video.
+                </video>
 <Header id="1" />
 <h2 >Augmented and Virtual Reality</h2>
 <h1 >360° Experiences</h1>

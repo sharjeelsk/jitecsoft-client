@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 import {useForm} from 'react-hook-form'
 import emailjs from 'emailjs-com';
 
-const ContactUs = () => {
+const ContactUs = (props) => {
     const {register, handleSubmit, formState:{errors}} = useForm()
     const [success,setSuccess] = React.useState(null)
     const [loading,setLoading] = React.useState(false)
@@ -13,10 +13,11 @@ const ContactUs = () => {
     const onSubmit = (data,e)=>{
         setLoading(true)
         console.log(data);
-        emailjs.sendForm('service_h5rtv2c', 'template_j7xbmho',e.target, 'user_FSNYDg6xpEqMSIFqFAsZ3')
+        emailjs.sendForm('service_vv5vkxh', 'template_ff3p3z8',e.target, 'jsHYo69dt_R-rmwdK')
           .then((result) => {
               console.log(result.text);
               setLoading(false)
+              props.history.push("/")
           }, (error) => {
               console.log(error);
           });
@@ -47,8 +48,8 @@ const ContactUs = () => {
                 <h1 className="giveus">Give Us Your Requirement</h1>
                 <div className="inputdiv">
                 <label>Message</label>
-                <textarea {...register('Message',{required:true})} className={errors.Message?"errorinputtextarea":"greeninputtextarea"} placeholder="Message" name="Message" type="textarea" />
-                {errors.Message?<p className="errorname">Message is Invalid</p>:null}
+                <textarea {...register('message',{required:true})} className={errors.message?"errorinputtextarea":"greeninputtextarea"} placeholder="Message" name="message" type="textarea" />
+                {errors.message?<p className="errorname">Message is Invalid</p>:null}
                 </div>
                 
                 {loading?

@@ -25,7 +25,7 @@ const Footer = () => {
                 <Link className="footerlinks" to="/ai">Artificial Intelligence</Link>
             </div>
             <div className="col-12" style={{textAlign:"center"}}>
-            <p className="copy" style={{marginTop:"3%"}}>Copyright 2012 - 2021 JitecSoft | All Rights Reserved | Powered by JitecSoft | AR/VR</p>
+            <p className="copy" style={{marginTop:"3%"}}>Copyright 2012 - 2024 JitecSoft | info@jitecsoft.com | All Rights Reserved | Powered by JitecSoft | AR/VR</p>
             </div>
 
         </div>
